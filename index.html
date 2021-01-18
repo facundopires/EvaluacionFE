@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="introduction" content="no-reference">
+    <title>Evaluacion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./scripts/fingerprint.js" type="module"></script>
+    <script defer src="scripts/lazyLoad.js"></script>
+    <script src="scripts/app.js" type="module"></script>
+</head>
+
+<body>
+    <div class="container col-10" id="divPadding">
+        <div  id="grid">
+            <div><img data-lazy="assets/imgtop.jpg"></div>
+            <div style="width: max-content;" id="first-item">
+                <b>Datos Personales</b>
+                <br> 
+                Nombre
+                <br>
+                Edad
+                <br>
+                Mail
+                <br>
+                Telefono
+            </div>
+            <hr>
+            <div>
+                <b>Conocimientos</b>
+                <br>
+                HTML
+                <br>
+                CSS
+                <br>
+                JS
+                <br>
+                Angular
+            </div>
+            <hr>
+            <div>
+                <b>Hobbies</b>
+                <br>
+                Cantar
+                <br>
+                Comer
+                <br>
+                Guitarra
+                <br>
+                Cocinar
+            </div>
+        </div>
+
+        <div id="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo leo, convallis eget sollicitudin non,
+            scelerisque quis dolor. Fusce vestibulum consectetur maximus. Vestibulum porttitor id odio quis pulvinar.
+            Suspendisse ac nunc tincidunt, ultricies risus sollicitudin, euismod lacus. Sed euismod tempus tortor sed
+            sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras
+            cursus semper est in molestie. Phasellus semper ornare orci, vel convallis magna. Etiam a velit ac ligula
+            egestas feugiat vitae vel sem. Duis fringilla volutpat ornare. Proin laoreet nec diam sit amet rutrum. Etiam
+            porta ipsum velit, et tempor augue lobortis vulputate. Nulla varius consectetur suscipit. Suspendisse
+            pharetra justo dolor, non volutpat urna condimentum in. Proin ornare eget arcu ac tincidunt. Aliquam varius
+            ligula at felis consectetur, in finibus mauris maximus.
+        </div>
+        <br>
+        <div class="video-responsive">
+            <iframe  src="https://www.youtube.com/embed/NLTdu4XZby0" loading="lazy" alt="" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="flex-container">
+            <div class="flex-box">
+                <img id="breakpoint" data-lazy="assets/imgbottom.jpg">
+            </div>
+            <div class="flex-box">
+                <img id="breakpoint" data-lazy="assets/imgbottom.jpg">
+            </div>
+            <div class="flex-box">
+                <img id="breakpoint" data-lazy="assets/imgbottom.jpg">
+            </div>
+            <div class="flex-box">
+                <img id="breakpoint" data-lazy="assets/imgbottom.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
