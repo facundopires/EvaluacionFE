@@ -1,0 +1,129 @@
+body {
+    margin: 8px;
+    border: 1px #000 solid;
+  }
+
+hr{
+    display:none;
+  }
+
+#divPadding {
+    margin-top: 4%;
+    box-sizing:  unset;
+   
+}
+#text{
+    padding-top: 3%;
+}
+.col-10{
+  width:100%;
+}
+
+#grid{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.flex-container{
+  display:flex;
+  justify-content: space-between;
+  margin-top:inherit;
+  margin-bottom: 5%;
+  width:104%;
+}
+
+#breakpoint{
+  display: flex;
+  width: 85%;
+}
+
+.video-responsive {
+    
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    }
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    }
+
+  
+  @media screen and (max-width: 1024px) {
+    #grid {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px 13px;
+      grid-template-areas:
+        ". ."
+        ". .";
+      justify-content: stretch;
+      width:110%;
+    }
+
+    .flex-container{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px 13px;
+      grid-template-areas:
+        ". ."
+        ". .";
+      justify-content: space-around;
+    }
+    .video-responsive {
+      height: 0;
+      overflow: hidden;
+      padding-top: 30px;
+      position: relative;
+      }
+
+    #text{
+      padding-top: 0%;
+    }
+    #divPadding{
+      width: 75%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 320px) {
+    hr{
+      display: block;
+      width: 77%;
+      border: 3px solid black !important;
+      opacity: 1;
+    }
+    #grid{
+      display: block;
+    }
+    #divPadding{
+      width:100%;
+      padding: 8%;
+      margin-top: 0%;
+      margin-bottom: 10%;
+    }
+    #text{
+      padding-top:3%;
+      width: 90%;
+    }
+    .video-responsive{
+      width:89%;
+      margin-left: -3%;
+    }
+    .flex-container{
+      display: contents;
+      gap: 0px 0px;
+      grid-template-rows: 0%;
+      grid-template-areas: none;
+    }
+    .flex-box{
+      margin-top: 10%;
+    }
+
+  }
